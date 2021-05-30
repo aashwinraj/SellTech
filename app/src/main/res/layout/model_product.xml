@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin ="12dp"
+
+    android:background="@color/grey"
+
+
+    app:cardCornerRadius="22dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_productImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="12dp"
+            android:outlineAmbientShadowColor="@color/black"
+            app:cardCornerRadius="28dp">
+
+            <ImageView
+                android:id="@+id/imageView_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/icons8_sell_stock_64" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView_productType"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/cardView_productImage"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/cardView_productImage"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            tools:text="Laptop" />
+
+        <TextView
+            android:id="@+id/textView_brandTag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/textView_productType"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/cardView_productImage"
+            android:fontFamily="sans-serif-black"
+            android:text="Brand"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView_brandName"
+                android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/textView_productType"
+            android:layout_alignTop="@id/textView_brandTag"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/textView_brandTag"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_priceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/textView_brandTag"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/cardView_productImage"
+            android:fontFamily="sans-serif-black"
+            android:text="Price:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_price"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18sp"
+            android:layout_below="@id/textView_brandName"
+            android:layout_alignTop="@id/textView_priceTag"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/textView_priceTag"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/textView_YearsTag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/textView_priceTag"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/cardView_productImage"
+            android:fontFamily="sans-serif-black"
+            android:text="Used for:"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textView_usedFor"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_alignTop="@id/textView_YearsTag"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/textView_YearsTag"
+            android:fontFamily="sans-serif-medium" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

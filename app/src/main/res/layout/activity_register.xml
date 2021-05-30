@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+
+            <com.example.selltech.util.MSPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREATE AN ACCOUNT"
+                android:textSize="30dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box_Enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal">
+
+
+            <com.example.selltech.util.MSPEditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box_EnterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/box_Enter_name">
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_text_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="e-mail"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box_EnterPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/box_EnterEmail">
+
+            <EditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Phone Number"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box_Enterpassword"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box_EnterPhone">
+
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="300dp"
+
+
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/box_EnterConfpassword"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box_Enterpassword">
+
+
+            <EditText
+                android:id="@+id/edit_text_Confirmpassword"
+                android:layout_width="300dp"
+android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/edit_text_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Confirm password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/box_EnterConfpassword"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="18dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="55dp"
+
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/box_EnterConfpassword"
+            android:layout_height="wrap_content">
+
+            <com.example.selltech.util.MSPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the terms and condition"
+                android:textSize="16dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.example.selltech.util.MSPButton
+            android:id="@+id/registration"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/box_EnterConfpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="92dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_background"
+            android:text="Register"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

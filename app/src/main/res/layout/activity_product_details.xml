@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/pd_toolbar"
+            android:layout_height="44dp"
+            android:background="@drawable/side_nav_bar">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+android:text="Product Details"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+
+                 />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/productDetailsImage"
+            android:layout_below="@id/pd_toolbar"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:layout_height="230dp"/>
+
+        <TextView
+            android:id="@+id/pd_productType"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/productDetailsImage"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18dp"
+            tools:text="Laptop" />
+
+        <TextView
+            android:id="@+id/productDetails_brandTag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/pd_productType"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+
+            android:fontFamily="sans-serif-black"
+            android:text="Brand:"
+            android:textSize="18dp"
+
+
+            />
+        <TextView
+            android:id="@+id/productDetails_priceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/productDetails_brandTag"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Price :"
+            android:textSize="18dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/productDetails_YearsTag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/productDetails_priceTag"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Used for :"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/productDetails_DescriptionTag"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/productDetails_YearsTag"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Description :"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/pd_brandName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_below="@id/pd_productType"
+            android:layout_alignTop="@id/productDetails_brandTag"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/productDetails_brandTag"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="18dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/pd_price"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="18dp"
+
+
+            android:layout_alignTop="@id/productDetails_priceTag"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/productDetails_priceTag"
+            android:fontFamily="sans-serif-medium" />
+
+
+        <TextView
+            android:id="@+id/pd_usedFor"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_alignTop="@id/productDetails_YearsTag"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:textSize="18dp"
+
+            android:layout_toRightOf="@id/productDetails_YearsTag"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/pd_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_centerVertical="true"
+       android:layout_below="@id/productDetails_DescriptionTag"
+            android:textSize="18dp"
+
+            tools:text="sdfnjsdnjsdnjsdncjsdncsdvsdcbjsjdcbjsdcbjsdcbjsddcbjdscbsdvcsdsdcsdcsdcsdc"
+
+            android:fontFamily="sans-serif-medium" />
+
+        <com.example.selltech.util.MSPButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+        android:id="@+id/buyButton"
+            android:layout_below="@id/pd_description"
+            android:background="@drawable/button_background"
+            android:text="add to cart "
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="28dp"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <com.example.selltech.util.MSPButton
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/goToCartButton"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_below="@id/buyButton"
+            android:background="@drawable/button_background"
+            android:text="Go to cart "
+            android:visibility="gone"
+android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+<!--        <com.example.selltech.util.MSPButton-->
+<!--            android:layout_width="220dp"-->
+<!--            android:layout_height="40dp"-->
+
+<!--            android:layout_below="@id/buyButton"-->
+
+<!--            android:layout_alignParentEnd="true"-->
+
+
+<!--            android:layout_marginEnd="7dp"-->
+<!--            android:layout_alignTop="@id/buyButton"-->
+<!--            android:background="@drawable/button_background"-->
+<!--            android:text="Contact Seller"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="22dp" />-->
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

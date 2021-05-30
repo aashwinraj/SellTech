@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar_userProfile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        
+
+        android:background="@drawable/side_nav_bar">
+
+        <TextView
+
+
+            android:id="@+id/textview_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="EDIT PROFILE"
+            android:textColor="@color/black"
+            android:textSize="24sp">
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/toolbar_userProfile"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        app:cardCornerRadius="1000dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/side_nav_bar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/user_profile_clipart" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/et_box_name"
+
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/cardView_pic"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Name"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/et_box_email"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_box_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/et_box_phone"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_box_email"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Phone "
+        android:textSize="20dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_box_phone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="326dp" />
+
+    <com.example.selltech.util.MSPButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:background="@drawable/button_background"
+
+        android:text="SAVE" />
+
+</RelativeLayout>
+

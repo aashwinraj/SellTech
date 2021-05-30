@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="185dp"
+    android:layout_margin="14dp"
+    android:background="@color/grey">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewCart"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="22dp">
+
+        <ImageView
+            android:id="@+id/iv_cart_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_cartItemBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/cardViewCart"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        tools:text="Sony" />
+
+    <TextView
+        android:id="@+id/tv_cartItemType"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/tv_cartItemBrand"
+
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        tools:text="headpones" />
+
+    <TextView
+        android:id="@+id/tv_cartItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_cartItemBrand"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/cardViewCart"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        tools:text="400" />
+
+    <TextView
+        android:id="@+id/tv_cartItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_cartItemPrice"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/tv_quantityTag"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        tools:text="400" />
+
+    <TextView
+        android:id="@+id/tv_quantityTag"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_cartItemPrice"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/cardViewCart"
+        android:fontFamily="sans-serif-medium"
+        android:text="Quantity:"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/deleteCartItem"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="14dp"
+        android:src="@drawable/deletecart" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv_quantityTag"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/cardViewCart"
+        android:text="Status: ARRIVING"
+        android:textSize="18sp"
+        android:textColor="@color/green"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cancelOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/status"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/cardViewCart"
+        android:text="Cancel Order"
+
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

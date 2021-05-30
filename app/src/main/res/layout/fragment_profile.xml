@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="1000dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/side_nav_bar" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userProfileImage"
+            android:src="@drawable/user_profile_clipart" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Name :"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/cardView_pic"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:id="@+id/nameTa"/>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Email :"
+        android:layout_marginLeft="8dp"
+
+        android:layout_below="@id/nameTa"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:id="@+id/EmailTag"/>
+    <TextView
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:text="Phone :"
+    android:layout_below="@id/EmailTag"
+    android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+
+        android:fontFamily="sans-serif-medium"
+    android:textSize="18dp"
+    android:textColor="@color/black"
+    android:id="@+id/PhoneTag"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:text="Name:"-->
+<!--        android:textColor="black"-->
+<!--        android:textSize="20dp"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:id="@+id/NameTag"-->
+<!--      -->
+<!--        android:layout_marginTop="16dp"/>-->
+
+
+
+    <TextView
+        android:id="@+id/et_box_name"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/cardView_pic"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/nameTa"
+
+        android:layout_alignTop="@id/nameTa"
+        android:textColor="@color/black"
+
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/et_box_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_box_name"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/EmailTag"
+        android:layout_alignTop="@id/EmailTag"
+android:textColor="@color/black"
+
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/et_box_phone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_box_email"
+android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/PhoneTag"
+        android:layout_alignTop="@id/PhoneTag"
+        android:textSize="20dp" />
+
+
+<!--    <com.example.selltech.util.MSPButton-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+
+<!--        android:layout_marginLeft="12dp"-->
+<!--        android:layout_marginRight="12dp"-->
+
+<!--        android:layout_marginTop="600dp"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:text="SAVE" />-->
+
+</RelativeLayout>
+

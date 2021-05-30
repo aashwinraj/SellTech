@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "698525281556",
+    "project_id": "selltech-97f0f",
+    "storage_bucket": "selltech-97f0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698525281556:android:63590400a6e82109f76601",
+        "android_client_info": {
+          "package_name": "com.example.selltech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698525281556-3nemhd46bm5m88b6ef9tcb34og3f7v2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkv5ovCxMVrG0FF9rftsCAGsI2nWklGZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698525281556-3nemhd46bm5m88b6ef9tcb34og3f7v2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+package com.example.selltech
+
+import android.app.Dialog
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.os.Message
+import androidx.core.content.ContextCompat
+import com.google.android.material.snackbar.Snackbar
+
+ open class SnackbarActivity : AppCompatActivity() {
+
+
+
+     private lateinit var mProgressDialog: Dialog
+   fun showSnackBar(message: String, errorMessage: Boolean){
+
+        val snackbar = Snackbar.make(this,findViewById(android.R.id.content),message,Snackbar.LENGTH_LONG)
+        val snackBarView= snackbar.view
+
+        if(errorMessage){
+            snackBarView.setBackgroundColor(ContextCompat.getColor(this,R.color.green))
+        }
+
+        else{
+            snackBarView.setBackgroundColor(ContextCompat.getColor(this,R.color.red))
+        }
+        snackbar.show()
+
+
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_snackbar)
+    }
+     fun showProressDialogue(){
+         mProgressDialog = Dialog(this)
+
+         mProgressDialog.setContentView(R.layout.dialouge_progress)
+         mProgressDialog.setCancelable(false)
+         mProgressDialog.setCanceledOnTouchOutside(false)
+         mProgressDialog.show()
+
+     }
+     fun hideProgressDialogue(){
+         mProgressDialog.dismiss()
+     }
+}

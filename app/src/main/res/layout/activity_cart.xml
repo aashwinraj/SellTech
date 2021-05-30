@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cartToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/side_nav_bar">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+
+            android:text="Cart"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_cart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/cartToolbar"
+android:layout_marginTop="6dp"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <TextView
+        android:id="@+id/total_tag"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/recyclerView_cart"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-medium"
+
+        android:text="Total:"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/tv_cartEmpty"
+        android:text="Cart is Empty"/>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="229dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@id/recyclerView_cart"
+        android:layout_alignTop="@id/total_tag"
+
+
+        android:layout_toRightOf="@id/total_tag"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_total"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginRight="6dp"
+
+
+        android:layout_toRightOf="@id/tv_total"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:text="Rs"
+
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/shipping_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/total_tag"
+
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Shipping Charge"
+        android:textSize="18sp" />
+
+    <TextView
+
+
+        android:id="@+id/shippin60"
+
+
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/shipping_tag"
+        android:layout_toRightOf="@id/shipping_tag"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:text="60"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/shippin60"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="6dp"
+        android:layout_toRightOf="@id/shippin60"
+        android:fontFamily="sans-serif-medium"
+
+        android:gravity="end"
+        android:text="Rs"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/netTag"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/shipping_tag"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Net Amount"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_netAmount"
+        android:layout_width="234dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/netTag"
+        android:layout_toRightOf="@id/netTag"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_netAmount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="6dp"
+        android:layout_toRightOf="@id/tv_netAmount"
+
+        android:fontFamily="sans-serif-medium"
+        android:gravity="end"
+        android:id="@+id/netRs"
+        android:text="Rs"
+        android:textSize="18sp" />
+<com.example.selltech.util.MSPButton
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@id/shippin60"
+    android:layout_marginTop="66dp"
+    android:id="@+id/purchaseButton"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:textColor="@color/white"
+    android:background="@drawable/button_background"
+    android:text="Purchase"/>
+
+</RelativeLayout>
+
+
+

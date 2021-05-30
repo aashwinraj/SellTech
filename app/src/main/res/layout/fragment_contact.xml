@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.ContactFragment">
+
+
+
+
+    <ImageButton
+        android:id="@+id/emailIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_baseline_email_24" />
+
+    <ImageButton
+        android:id="@+id/poneIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailIcon"
+        android:layout_marginTop="16dp"
+
+        android:src="@drawable/ic_baseline_local_phone_24" />
+
+    <ImageButton
+        android:id="@+id/locationIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/poneIcon"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_location_on_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/emailIcon"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/emailIcon"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="aashwinraj0257@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/poneIcon"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/poneIcon"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="7424961792"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/locationIcon"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/locationIcon"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Palo Alto"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+</RelativeLayout>
